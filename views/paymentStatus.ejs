@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Status</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h2 class="mb-4">Payment Status</h2>
+            </div>
+            <div class="col text-right">
+                <a href="/paymentStatus/add" class="btn btn-primary">Add Payment Status</a>
+                <a href="/" class="btn btn-primary">Home</a>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Membership Type</th>
+                    <th>Payment Status</th>
+                    <th>Amount</th>
+                    <th>Date of Joining</th>
+                    <th>Date of Expiring</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% paymentStatusList.forEach(payment => { %>
+                    <tr>
+                        <td><%= payment.name %></td>
+                        <td><%= payment.phone %></td>
+                        <td><%= payment.membershipType %></td>
+                        <td><%= payment.paymentStatus %></td>
+                        <td><%= payment.amount %></td>
+                        <td><%= payment.dateOfJoining.toDateString() %></td>
+                        <td><%= payment.dateOfExpiring.toDateString() %></td>
+                        <td>
+                            <form method="POST" action="/paymentStatus/delete/<%= payment._id %>">
+                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

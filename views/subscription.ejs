@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Details</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      background-image: url('/pictures/sven-mieke-MsCgmHuirDo-unsplash.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000; 
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .subscription-header {
+      background-color: #007bff; 
+      color: #fff; 
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .facilities-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .facilities-list li {
+      margin-bottom: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="subscription-header">Subscription Plans</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-header">
+            <h3>Basic Plan</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Facilities:</p>
+            <ul class="facilities-list">
+              <li>Gym access</li>
+              <li>Group classes</li>
+            </ul>
+            <p class="card-text">Price:</p>
+            <ul class="facilities-list">
+              <li>Rs 500/month</li>
+              <li>Rs 4000/year</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-header">
+            <h3>Premium Plan</h3>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Facilities:</p>
+            <ul class="facilities-list">
+              <li>Gym access</li>
+              <li>Group classes</li>
+              <li>Personal trainer sessions</li>
+            </ul>
+            <p class="card-text">Price:</p>
+            <ul class="facilities-list">
+              <li>Rs 800/month</li>
+              <li>Rs 6000/year</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

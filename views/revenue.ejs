@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Revenue</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/pictures/sven-mieke-MsCgmHuirDo-unsplash.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #revenueChart {
+            max-width: 100%;
+            margin: 0 auto; 
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .home-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Gym Revenue</h2>
+        <canvas id="revenueChart"></canvas>
+        <p>Total Amount (From Member Registration in RS): <%= totalAmount %></p>
+        <p>Total Salary (Salary of Staff in RS): <%= totalSalary %></p>
+        <p>Total Revenue(in RS): <%= revenue %></p>
+
+        
+    </div>
+
+    <script>
+        var data = {
+            labels: ['Total Amount', 'Total Salary'],
+            datasets: [{
+                data: ['<%= totalAmount %>', '<%= totalSalary %>'],
+                backgroundColor: ['#007BFF', '#FFC107']
+            }]
+        };
+
+        var config = {
+            type: 'pie',
+            data: data,
+            options: {
+                responsive: false, 
+                legend: {
+                    display: true,
+                    position: 'bottom'
+                }
+            }
+        };
+
+        var ctx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(ctx, config);
+    </script>
+</body>
+
+</html>

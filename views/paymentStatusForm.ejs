@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Payment Status</h2>
+        <form action="/paymentStatus/add" method="POST" class="border p-3">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="membershipType">Membership Type</label>
+                <select class="form-control" id="membershipType" name="membershipType" required>
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="paymentStatus">Payment Status</label>
+                <select class="form-control" id="paymentStatus" name="paymentStatus" required>
+                    <option value="done">Done</option>
+                    <option value="notdone">Not Done</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" class="form-control" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="dateOfJoining">Date of Joining</label>
+                <input type="date" class="form-control" id="dateOfJoining" name="dateOfJoining" required>
+            </div>
+            <div class="form-group">
+                <label for="dateOfExpiring">Date of Expiring</label>
+                <input type="date" class="form-control" id="dateOfExpiring" name="dateOfExpiring" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</body>
+</html>
