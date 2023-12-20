@@ -35,11 +35,13 @@ Start Mongodb connection(Install MongoDB if not installed)
 
 Update the MongoDB connection string in the app.js file with the database name you want:
 
-javascript
-Copy code
-mongoose.connect('mongodb://127.0.0.1/your_database_name', {
+
+mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
+
   useNewUrlParser: true,
+  
   useUnifiedTopology: true,
+  
 })
 
 
