@@ -10,23 +10,25 @@ Before running the project, ensure you have the following installed:
 
 ## Getting Started
 
-1. Download Project
+
+
+### 1. Download Project
    
 Download zip file and Extract all Files
 
-2. Navigate to the project directory:
+### 2. Navigate to the project directory:
 
 cd gym-management-system
 
 
-3.Install dependencies:
+### 3.Install dependencies:
 Run following commands to run project
 
 npm init
 npm install express mongoose body-parser
 
 
-4.Configure MongoDB:
+### 4.Configure MongoDB:
 
 Start Mongodb connection(Install MongoDB if nnot installed)
 
@@ -40,7 +42,7 @@ mongoose.connect('mongodb://127.0.0.1/your_database_name', {
 })
 
 
-5.Run the application:
+### 5.Run the application:
 
 node app.js
 
