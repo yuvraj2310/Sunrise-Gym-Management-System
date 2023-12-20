@@ -25,19 +25,19 @@ cd gym-management-system
 ### 3.Install dependencies:
 Run following commands to run project
 
-npm init
+-npm init
 
-npm install express mongoose body-parser
+-npm install express mongoose body-parser
 
 
 ### 4.Configure MongoDB:
 
-Start Mongodb connection(Install MongoDB if not installed)
+-Start Mongodb connection(Install MongoDB if not installed)
 
-Update the MongoDB connection string in the app.js file with the database name you want:
+-Update the MongoDB connection string in the app.js file with the database name you want:
 
 
-mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
+-mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
 
   useNewUrlParser: true,
   
@@ -48,6 +48,6 @@ mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
 
 ### 5.Run the application:
 
-node app.js
+-node app.js
 
-The application will be accessible at [Click Here].(http://localhost:3000).
+-The application will be accessible at [Click Here].(http://localhost:3000).
