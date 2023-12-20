@@ -7,7 +7,7 @@ This is a Gym Management System implemented using EJS, Node.js, and MongoDB. It 
 Before running the project, ensure you have the following installed:
 
 - Node.js: [Download and Install Node.js](https://nodejs.org/)
-- Mongodb: [Download and Install Mongodb}.(https://www.mongodb.com/try/download/community).
+- Mongodb: [Download and Install Mongodb].(https://www.mongodb.com/try/download/community).
 
 ## Getting Started
 
@@ -50,4 +50,4 @@ mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
 
 node app.js
 
-The application will be accessible at [Click Here] (http://localhost:3000).
+The application will be accessible at [Click Here].(http://localhost:3000).
