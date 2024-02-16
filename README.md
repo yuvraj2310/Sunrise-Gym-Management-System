@@ -6,47 +6,46 @@ This is a Gym Management System implemented using EJS, Node.js, and MongoDB. It 
 
 Before running the project, ensure you have the following installed:
 
-- Node.js: [Download and Install Node.js](https://nodejs.org/)
-- Mongodb: [Download and Install Mongodb](https://www.mongodb.com/try/download/community).
+- **Node.js:** [Download and Install Node.js](https://nodejs.org/)
+- **MongoDB:** [Download and Install MongoDB](https://www.mongodb.com/try/download/community).
 
 ## Getting Started
 
-
-
 ### 1. Download Project
-   
-Download zip file and Extract all Files
+
+Download the zip file and extract all files.
 
 ### 2. Navigate to the project directory:
-   cd gym-management-system
 
+```bash
+cd gym-management-system
+```
 
-### 3.Install dependencies:
-Run following commands to run project
-   ```bash
-      npm init
-   ```bash
-      npm install express mongoose body-parser
+### 3. Install dependencies:
 
+Run the following commands to install project dependencies:
 
-### 4.Configure MongoDB:
+```bash
+npm init
+npm install express mongoose body-parser
+```
 
-- Start Mongodb connection(Install MongoDB if not installed)
+### 4. Configure MongoDB:
 
-- Update the MongoDB connection string in the app.js file with the database name you want:
+- Start MongoDB connection (Install MongoDB if not installed).
+- Update the MongoDB connection string in the `app.js` file with the database name you want:
 
-
-- mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
-
+```javascript
+mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
   useNewUrlParser: true,
-  
   useUnifiedTopology: true,
-  
 })
+```
 
+### 5. Run the application:
 
-### 5.Run the application:
-   ```bash
-      node app.js
+```bash
+node app.js
+```
 
-- The application will be accessible at [Click Here](http://localhost:3000).
+- The application will be accessible at [localhost:3000](http://localhost:3000).
