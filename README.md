@@ -18,8 +18,7 @@ Before running the project, ensure you have the following installed:
 Download zip file and Extract all Files
 
 ### 2. Navigate to the project directory:
-   ```bash
-      cd gym-management-system
+   cd gym-management-system
 
 
 ### 3.Install dependencies:
