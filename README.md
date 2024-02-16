@@ -18,16 +18,16 @@ Before running the project, ensure you have the following installed:
 Download zip file and Extract all Files
 
 ### 2. Navigate to the project directory:
-
-cd gym-management-system
+   ```bash
+      cd gym-management-system
 
 
 ### 3.Install dependencies:
 Run following commands to run project
-
-- npm init
-
-- npm install express mongoose body-parser
+   ```bash
+      npm init
+   ```bash
+      npm install express mongoose body-parser
 
 
 ### 4.Configure MongoDB:
@@ -47,7 +47,7 @@ Run following commands to run project
 
 
 ### 5.Run the application:
-
-- node app.js
+   ```bash
+      node app.js
 
 - The application will be accessible at [Click Here](http://localhost:3000).
