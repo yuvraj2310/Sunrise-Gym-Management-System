@@ -1,13 +1,21 @@
-# Gym Management System
+# Sunrise Gym Management System
 
-This is a Gym Management System implemented using EJS, Node.js, and MongoDB. It uses the Express framework for handling HTTP requests, Mongoose for interacting with MongoDB, and Body Parser for parsing request bodies.
+Sunrise Gym Management System is built using EJS, Node.js, and MongoDB. It leverages Express for handling HTTP requests, Mongoose for MongoDB interactions, and Body Parser for request parsing.
+
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Contact](#contact)
 
 ## Prerequisites
 
-Before running the project, ensure you have the following installed:
+Ensure you have the following installed:
 
-- **Node.js:** [Download and Install Node.js](https://nodejs.org/)
-- **MongoDB:** [Download and Install MongoDB](https://www.mongodb.com/try/download/community).
+- **Node.js:** [Download Node.js](https://nodejs.org/)
+- **MongoDB:** [Download MongoDB](https://www.mongodb.com/try/download/community)
 
 ## Getting Started
 
@@ -45,7 +53,37 @@ mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
 ### 5. Run the application:
 
 ```bash
-node app.js
+  nodemon app.js
 ```
-
 - The application will be accessible at [localhost:3000](http://localhost:3000).
+
+## Features
+
+### Member Registration: Add new gym members.
+### Membership Management: Update and manage memberships.
+### Staff Management
+### Rvenue overview
+
+## Screenshots
+
+## Home Page
+![Home Page](screenshots/Homepage.png)
+
+## Addm Member
+![Register](screenshots/Register.png)
+
+## Member details
+![Feedback](screenshots/Details.png)
+
+## Revenue
+![Courses](screenshots/Revenue.png)
+
+
+## Contact
+
+For any inquiries or feedback, please contact:
+
+- **Email**: shashikantp2302@gmail.com
+
+
+
