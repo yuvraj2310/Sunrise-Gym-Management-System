@@ -83,7 +83,7 @@ mongoose.connect('mongodb://127.0.0.1/### your_database_name', {
 
 For any inquiries or feedback, please contact:
 
-- **Email**: shashikantp2302@gmail.com
+- **Email**:yuvrajsathe2801@gmail.com
 
 
 
